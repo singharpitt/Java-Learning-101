@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Day_01Hellomsg {
     public static void main(String args[]){
         System.out.println("Prints on the next line");
