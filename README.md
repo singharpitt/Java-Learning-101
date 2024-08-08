@@ -42,6 +42,11 @@ Explore the powerful Spring Boot framework for building robust and scalable appl
    ```
 3. Explore the sections and follow along with the examples and tutorials provided.
 
+
+## Future plans after completion of the topics 
+ 1. Making programs and other projects witht the help of OOPS .
+ 2. Java DSA questions .
+
 ## Contributing
 
 Contributions are welcome! If you have any improvements or new content to add, feel free to open a pull request.
