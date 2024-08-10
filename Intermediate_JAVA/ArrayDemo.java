@@ -1,5 +1,3 @@
-package Intermediate_JAVA;
-
 public class ArrayDemo {
 
     public static void main(String[] args) {

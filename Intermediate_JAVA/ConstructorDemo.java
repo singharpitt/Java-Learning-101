@@ -1,4 +1,4 @@
-package Intermediate_JAVA;
+
 
 public class ConstructorDemo {
     // Instance variables

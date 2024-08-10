@@ -1,4 +1,4 @@
-package Intermediate_JAVA;
+
 
 public class ForEachExample {
     public static void main(String[] args) {

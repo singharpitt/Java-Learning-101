@@ -1,4 +1,4 @@
-package Intermediate_JAVA;
+
 class CalculatorDemo {
     // Method to add two numbers
     public int add(int a, int b) {

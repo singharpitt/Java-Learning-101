@@ -1,5 +1,3 @@
-package Intermediate_JAVA;
-
 public class Library_ArrayOFObjects_usingforeach {
     public static void main(String[] args) {
         // Create an array to store Book objects

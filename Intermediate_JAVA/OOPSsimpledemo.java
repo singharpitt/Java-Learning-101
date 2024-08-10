@@ -1,4 +1,4 @@
-package Intermediate_JAVA;
+
 
 class demosimple {
     public int add(int n1 , int n2){

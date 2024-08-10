@@ -1,4 +1,4 @@
-package Intermediate_JAVA;
+
 
 class ThreeDArrayDemo {
     public static void main(String[] args) {

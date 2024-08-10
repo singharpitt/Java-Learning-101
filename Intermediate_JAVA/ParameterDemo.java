@@ -1,4 +1,4 @@
-package Intermediate_JAVA;
+
 
 class GreetingDemo {
     // Method with a parameter
