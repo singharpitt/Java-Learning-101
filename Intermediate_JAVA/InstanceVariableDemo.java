@@ -1,5 +1,3 @@
-
-
 class CarDemo {
     // Instance variable
     public String model;
