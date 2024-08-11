@@ -1,35 +1,38 @@
 package Advance_Java;
 
-// Define the enum named Day with package-private access
-enum Day {
-    SUNDAY("Weekend"), 
-    MONDAY("Weekday"), 
-    TUESDAY("Weekday"), 
-    WEDNESDAY("Weekday"), 
-    THURSDAY("Weekday"), 
-    FRIDAY("Weekday"), 
-    SATURDAY("Weekend");
+// Define the enum named Fruit with package-private access
+enum Fruit {
+    APPLE("Red or Green", "Sweet or Tart"), 
+    BANANA("Yellow", "Sweet"), 
+    ORANGE("Orange", "Citrus"), 
+    STRAWBERRY("Red", "Sweet"), 
+    BLUEBERRY("Blue", "Sweet"), 
+    GRAPE("Purple or Green", "Sweet"), 
+    LEMON("Yellow", "Sour");
 
-    // Field to store the type of the day
-    private final String type;
+    // Fields to store the color and taste of the fruit
+    private final String color;
+    private final String taste;
 
-    // Constructor to initialize the type field
-    private Day(String type) {
-        this.type = type;
+    // Constructor to initialize the fields
+    private Fruit(String color, String taste) {
+        this.color = color;
+        this.taste = taste;
     }
 
-    // Method to get the type of the day
-    public String getType() {
-        return type;
+    // Method to get the color of the fruit
+    public String getColor() {
+        return color;
     }
 
-    // Method to print a message based on the day type
+    // Method to get the taste of the fruit
+    public String getTaste() {
+        return taste;
+    }
+
+    // Method to print a message about the fruit
     public void printMessage() {
-        if (this.type.equals("Weekend")) {
-            System.out.println(this + " is a weekend!");
-        } else {
-            System.out.println(this + " is a weekday.");
-        }
+        System.out.println(this + " is " + color + " and tastes " + taste + ".");
     }
 }
 
@@ -38,20 +41,22 @@ public class EnumDemo01 {
 
     // Main method to execute the program
     public static void main(String[] args) {
-        // Create a variable of type Day
-        Day today = Day.MONDAY;
+        // Create a variable of type Fruit
+        Fruit favoriteFruit = Fruit.APPLE;
 
-        // Print the type of today
-        System.out.println("Today is a: " + today.getType());
+        // Print the characteristics of the favorite fruit
+        System.out.println("Favorite fruit details:");
+        System.out.println("Color: " + favoriteFruit.getColor());
+        System.out.println("Taste: " + favoriteFruit.getTaste());
 
-        // Print a message based on the day type
-        today.printMessage();
+        // Print a message about the favorite fruit
+        favoriteFruit.printMessage();
 
-        // Iterate over all days and print their types and messages
-        System.out.println("\nAll days and their types:");
-        for (Day day : Day.values()) {
-            System.out.println(day + ": " + day.getType());
-            day.printMessage();
+        // Iterate over all fruits and print their characteristics
+        System.out.println("\nAll fruits and their characteristics:");
+        for (Fruit fruit : Fruit.values()) {
+            System.out.println(fruit + ":");
+            fruit.printMessage();
         }
     }
 }
