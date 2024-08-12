@@ -6,6 +6,7 @@ public class OutOfMemoryErrorHandlingDemo {
     // Method that intentionally generates an OutOfMemoryError
     public static void generateOutOfMemoryError() {
         // Attempt to create a large number of objects
+        @SuppressWarnings("unused")
         int[][] largeArray = new int[Integer.MAX_VALUE][Integer.MAX_VALUE];
     }
 
